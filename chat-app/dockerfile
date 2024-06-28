@@ -1,0 +1,29 @@
+# Gunakan image node sebagai base image
+FROM node:14
+
+# Set working directory
+WORKDIR /app
+
+# Salin package.json dan package-lock.json
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Salin seluruh kode aplikasi ke dalam container
+COPY . .
+
+# Build aplikasi
+RUN npm run build
+
+# Gunakan image nginx sebagai base image untuk tahap kedua
+FROM nginx:alpine
+
+# Salin build output ke direktori nginx
+COPY --from=0 /app/build /usr/share/nginx/html
+
+# Expose port 80
+EXPOSE 80
+
+# Jalankan nginx
+CMD ["nginx", "-g", "daemon off;"]
