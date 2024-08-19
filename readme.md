@@ -47,6 +47,14 @@ Untuk menjalankan aplikasi ini, ikuti langkah-langkah berikut:
     cd /github/AI-Financial-Analysis/tampilan
     python app.py
     ```
+<!-- buatkan untuk tampilan nya -->
+## Tampilan Aplikasi
+
+Berikut adalah tampilan aplikasi Chat App:
+
+![Tampilan Aplikasi](https://github.com/rezapace/chat-ai/blob/master/tampilan.jpg?raw=true)
+
+Tampilan ini memberikan antarmuka pengguna yang intuitif untuk berinteraksi dengan AI. Pengguna dapat mengirim pesan dan melihat balasan dari kedua model AI, Gemini dan Groq.
 
 ## Kesimpulan
 Chat App adalah alat yang berguna untuk membandingkan respons dari dua model AI yang berbeda, Gemini dan Groq. Dengan antarmuka yang intuitif dan mudah digunakan, aplikasi ini memungkinkan pengguna untuk berinteraksi dengan AI dan mengevaluasi kemampuan mereka dalam memahami dan merespons input. Aplikasi ini dapat digunakan untuk berbagai tujuan, termasuk penelitian, pengembangan, dan hiburan.
